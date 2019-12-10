@@ -3,7 +3,7 @@ class HomeController < ApplicationController
     if user_signed_in?
       redirect_to blogs_path
     else 
-      redirect_to new_session_path
+      redirect_to new_user_session_path
     end
   end
 end
